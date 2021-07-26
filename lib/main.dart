@@ -18,6 +18,10 @@ class NinjaCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+            CircleAvatar(
+              backgroundImage: AssetImage('assets/chun-li_2.png'),
+              radius: 40.0,
+            ),
             Text(
               'NAME',
               style: TextStyle(
@@ -37,7 +41,7 @@ class NinjaCard extends StatelessWidget {
             ),
             SizedBox(height: 30.0),
             Text(
-              'Current Ninja Level',
+              'CURRENT NINJA LEVEL',
               style: TextStyle(
                 color: Colors.grey,
                 letterSpacing: 2.0,
@@ -53,6 +57,24 @@ class NinjaCard extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ), //Adds space between widgets
+            SizedBox(height: 30.0),
+            Row(
+              children: <Widget>[
+                Icon(
+                  Icons.email,
+                  color: Colors.grey[400],
+                ),
+                SizedBox(width: 10.0),
+                Text(
+                  'chun.li@gmail.com',
+                  style: TextStyle(
+                    color: Colors.grey[400],
+                    fontSize: 18.0,
+                    letterSpacing: 1.0,
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),
